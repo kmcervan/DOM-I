@@ -45,11 +45,27 @@ logo.setAttribute('src', siteContent["nav"]["img-src"])
 const nav = document.querySelectorAll("a");
 const navArray = Array.from(nav);
 navArray[0].textContent = "Services";
+navArray[0].style.color = "green";
 navArray[1].textContent = "Product";
+navArray[1].style.color = "green";
 navArray[2].textContent = "Vision";
+navArray[2].style.color = "green";
 navArray[3].textContent = "Features";
+navArray[3].style.color = "green";
 navArray[4].textContent = "About";
+navArray[4].style.color = "green";
 navArray[5].textContent = "Contact";
+navArray[5].style.color = "green";
+const newLink = document.createElement("a");
+newLink.textContent = "Blog";
+newLink.href = "#";
+newLink.style.color = "green";
+document.querySelector("nav").appendChild(newLink);
+const nuevoLink = document.createElement("a");
+nuevoLink.textContent = "Home";
+nuevoLink.href = "#";
+nuevoLink.style.color ="green";
+document.querySelector("nav").prepend(nuevoLink);
 
 // Section CTA
 const hOne = document.querySelector("h1");
